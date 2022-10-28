@@ -1,0 +1,1151 @@
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-BlackA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*메뉴*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    cursor: url(../images/mouse_hover.png), auto;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'LeferiBaseType-RegularA';
+    font-size: 14px;
+    line-height: 24px;
+    color: #222;
+    min-width: 1320px;
+    cursor: url(../images/mouse.png), auto;
+}
+
+#header {
+    position: fixed;
+    /*=럴러티브*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: #222 solid 1px;
+    z-index: 99;
+    transition: all 0.7s;
+}
+
+#header:hover, .header_bg{
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.in_header {
+    width: 1320px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    float: left;
+    margin-top: 27px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav>li {
+    float: left;
+}
+
+.nav>li>a {
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin: 60px 70px 0px 170px;
+}
+
+/*메뉴 꾸미기*/
+
+/*서브 메뉴*/
+.sub {
+    position: absolute;
+    width: 100%;
+    top: 125px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+.sub div {
+    width: 1320px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.sub div li {
+    font-size: 16px;
+    text-align: center;
+}
+
+.sub div li a {
+    text-align: center;
+    display: inline-block;
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+}
+
+.sub ul {
+    float: left;
+}
+
+.brand {
+    margin-left: 360px;
+}
+
+.sub_menu {
+    margin-left: 140px;
+}
+
+.community {
+    margin-left: 150px;
+}
+
+/*서브 메뉴*/
+
+
+
+/*서브메뉴 아이콘 꾸미기*/
+
+/*브랜드 서브메뉴*/
+
+.brand li:nth-child(1) {
+    background: url(../images/sub_icon/introduce_icon.png) no-repeat 15px 25px;
+}
+
+.brand li:nth-child(2) {
+    background: url(../images/sub_icon/bi_icon.png) no-repeat 10px 25px;
+}
+
+.brand li:nth-child(3) {
+    background: url(../images/sub_icon/began_icon.png)no-repeat 10px 25px;
+}
+
+.brand li:nth-child(4) {
+    background: url(../images/sub_icon/location_icon.png)no-repeat 8px 25px;
+}
+
+.sub_menu li:nth-child(1) {
+    background: url(../images/sub_icon/brunch_icon.png)no-repeat 20px 31px;
+}
+
+.sub_menu li:nth-child(2) {
+    background: url(../images/sub_icon/disert_icon.png)no-repeat 18px 32px;
+}
+
+.sub_menu li:nth-child(3) {
+    background: url(../images/sub_icon/drink_icon.png)no-repeat 5px 25px;
+}
+
+.sub_menu li:nth-child(4) {
+    background: url(../images/sub_icon/asac_life_icon.png)no-repeat 2px 25px;
+}
+
+.community li:nth-child(1) {
+    background: url(../images/sub_icon/notice_icon.png)no-repeat 30px 28px;
+}
+
+.community li:nth-child(2) {
+    background: url(../images/sub_icon/faq_icon.png)no-repeat 0px 25px;
+}
+
+.community li:nth-child(3) {
+    background: url(../images/sub_icon/evet_icon.png)no-repeat 30px 25px;
+}
+
+/*메뉴 호버 효과주기*/
+
+/*브랜드호버*/
+
+.brand li:nth-child(1):hover {
+    background: url(../images/sub_hover/introduce_hover.png)no-repeat no-repeat 15px 25px;
+}
+
+.brand li:nth-child(2):hover {
+    background: url(../images/sub_hover/bi_hover.png)no-repeat 10px 25px;
+}
+
+.brand li:nth-child(3):hover {
+    background: url(../images/sub_hover/began_hover.png)no-repeat 10px 25px;
+}
+
+.brand li:nth-child(4):hover {
+    background: url(../images/sub_hover/location_hover.png)no-repeat 8px 25px;
+}
+
+/*메뉴호버*/
+
+.sub_menu li:nth-child(1):hover {
+    background: url(../images/sub_hover/brunch_hover.png)no-repeat 20px 31px;
+}
+
+.sub_menu li:nth-child(2):hover {
+    background: url(../images/sub_hover/desert_hover.png)no-repeat 18px 32px;
+}
+
+.sub_menu li:nth-child(3):hover {
+    background: url(../images/sub_hover/drink_hover.png)no-repeat 5px 25px;
+}
+
+.sub_menu li:nth-child(4):hover {
+    background: url(../images/sub_hover/asac_life_hover.png)no-repeat 2px 25px;
+}
+
+.community li:nth-child(1):hover {
+    background: url(../images/sub_hover/notice_hover.png)no-repeat 30px 28px;
+}
+
+.community li:nth-child(2):hover {
+    background: url(../images/sub_hover/faq_hover.png)no-repeat 0px 25px;
+}
+
+.community li:nth-child(3):hover {
+    background: url(../images/sub_hover/event_hover.png)no-repeat 30px 25px;
+}
+
+
+.header_sns {
+    float: right;
+}
+
+.header_sns a {
+    display: inline-block;
+    padding: 50px 5px 0 0;
+
+}
+
+.header_sns a:hover {
+    opacity: 0.5;
+}
+
+/* 서브 메뉴 페이지 메인 배너*/
+
+#sub_menu{
+    width: 100%;
+}
+.sub_menu_inner{
+    overflow: hidden;
+}
+
+.sub_menu_inner img{
+    width: 100%;
+
+}
+
+/*아이템 배너*/
+
+.item_banner{
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bg_box{
+    background: url(../images/sub1/sub1_bg2.png) no-repeat 50% 0;
+    overflow: hidden;
+
+}
+
+
+/*our menu*/
+
+.ourmenu{
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/sub1/sub1_bg.png) no-repeat 50% 0;    
+}
+.ourmenu_inner{
+    width: 1320px;
+    height: 457px;
+    margin: 0 auto;
+}
+.ourmenu_inner h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-align: center;
+    background: url(../images/sub1/sub_ourmenu/h1_bg.png) no-repeat 477px 1px;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    animation: ani1 1s ease-in-out infinite alternate;
+}
+@keyframes ani1{
+    0%{background-position: 450px 2px;}
+    100%{background-position: 460px 2px;}
+}
+.ourmenu_inner article{
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -moz-box;
+        display: flex;
+        justify-content: space-between;
+        width: 715px;
+        margin: 0 auto;
+}
+.ourmenu_inner dl{
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+    border: 2px solid #455c4f;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.ourmenu_inner dl dt{
+    text-align: center;
+    padding-top: 85px;
+    font-size: 16px;
+    font-family:'Pretendard-Regular';
+    font-weight: 600;
+}
+article dl:nth-child(1):hover a{
+    color: #fff;
+}
+article dl:nth-child(2):hover a{
+    color: #fff;
+}
+article dl:nth-child(3):hover a{
+    color: #fff;
+}
+article dl:nth-child(4):hover a{
+    color: #fff;
+}
+
+dt a{
+    color: #455c4f;
+}
+
+dl:nth-child(1){
+    background: url(../images/sub1/sub_ourmenu/brunch_icon.png)no-repeat 50% 0;  
+}
+
+dl:nth-child(1):hover{
+    background: url(../images/sub1/sub_ourmenu/brunch_icon_hover.png)no-repeat 50% 0;
+    border: 2px solid #729782;
+    background-color: #729782;
+}
+
+dl:nth-child(2){
+    background: url(../images/sub1/sub_ourmenu/desert_icon.png)no-repeat 50% 0;
+}
+
+dl:nth-child(2):hover{
+    background: url(../images/sub1/sub_ourmenu/desert_icon_hover.png)no-repeat 50% 0;
+    background-color: #e0ac9b;
+    border: 2px solid #e0ac9b; 
+}
+
+dl:nth-child(3){
+    background: url(../images/sub1/sub_ourmenu/drink_icon.png)no-repeat 50% 0;
+}
+dl:nth-child(3):hover{
+    background: url(../images/sub1/sub_ourmenu/drink_icon_hover.png)no-repeat 50% 0;
+    background-color: #fbeeb0;
+    border: 2px solid #fbeeb0;
+    
+}
+dl:nth-child(4){
+    background: url(../images/sub1/sub_ourmenu/asac_life_icon.png)no-repeat 50% 0;
+}
+dl:nth-child(4):hover{
+    background: url(../images/sub1/sub_ourmenu/asac_life_icon_hover.png)no-repeat 50% 0;
+    background-color: #7da1bc;
+    border: 2px solid #7da1bc;
+}
+
+/* 샐러드 & 브런치 메뉴판*/
+
+#menu_box{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+#menu_box h2{
+    font-size: 36px;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+#brunch_inner{
+    margin: 40px auto;
+    width: 820px;
+    height: 690px;
+}
+.box1 ul{
+    float: left;
+    width: 247px;
+    height: 326px;
+    margin-right: 39px;
+    margin-bottom: 50px;
+    text-align: center; 
+    position: relative;
+}
+.box1 ul:nth-child(3n){
+    margin-right: 0;
+}
+
+.box1 ul:nth-child(1){
+    background: url(../images/sub1/brunch/salad.png) no-repeat center 40px, url(../images/sub1/brunch/brunch_bg.png) no-repeat 0 0;   
+}
+.box1 ul:nth-child(2){
+    background: url(../images/sub1/brunch/salad_02.png)no-repeat center 40px, url(../images/sub1/brunch/brunch_bg.png) no-repeat 0 0;
+}
+.box1 ul:nth-child(3){
+    background: url(../images/sub1/brunch/salad_03.png)no-repeat center 40px, url(../images/sub1/brunch/brunch_bg.png) no-repeat 0 0; 
+}
+.box1 ul:nth-child(4){
+    background: url(../images/sub1/brunch/sandwich.png)no-repeat center 36px, url(../images/sub1/brunch/brunch_bg.png) no-repeat 0 0; 
+}
+.box1 ul:nth-child(5){
+    background: url(../images/sub1/brunch/sandwich_02.png) no-repeat center 21px, url(../images/sub1/brunch/brunch_bg.png) no-repeat 0 0;  
+}
+.box1 ul:nth-child(6){
+    background: url(../images/sub1/brunch/rice.png) no-repeat center 21px, url(../images/sub1/brunch/brunch_bg.png) no-repeat 0 0;  
+}
+.box1 ul li{
+    margin-top: 176px;
+    margin-bottom: -179px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+.price{
+    font-size: 15px;
+    font-weight: 400;
+}
+.brunch_btn {
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    padding: 10px 20px; 
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    cursor: pointer;
+    cursor: url(../images/mouse_hover.png), auto;
+}
+.brunch_btn:hover{
+    background-color: #455c4f;
+    border: 1px solid #455c4f;
+    box-shadow: rgba(0, 0, 0, 0.3) -3px 3px 3px inset;
+    color: #fff;
+}
+
+/* 디저트 메뉴판*/
+#dessert_proj{
+    width: 100%;
+    overflow: hidden;
+}
+#dessert_proj h2{
+    margin-top: 55px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 500;
+}
+.dessert_inner{
+    width: 1320px;
+    height: 670px;
+    margin: 0 auto;
+}
+
+.dessert_inner ul{
+    float: left;
+    width: 247px;
+    height: 330px;
+    margin-right: 39px;
+    margin-bottom: 50px;
+    text-align: center; 
+    position: relative;
+}
+
+
+.dessert_inner ul:nth-child(1){
+    margin-left: 250px;
+}
+.dessert_inner ul:nth-child(3){
+    margin-right: 100px;
+}
+.dessert_inner ul:nth-child(4){
+    margin-left: 400px;
+}
+
+.dessert_inner ul li{
+    margin-top: 176px;
+    margin-bottom: -176px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+.dessert_btn {
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    padding: 10px 20px; 
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    cursor: pointer;
+    cursor: url(../images/mouse_hover.png), auto;
+}
+.dessert_btn:hover{
+    background-color: #ffc7a8;
+    border: 1px solid #ffc7a8;
+    box-shadow: rgba(0, 0, 0, 0.2) -3px 3px 2px inset;
+    color: #fff;
+}
+.dessert_inner ul:nth-child(1){
+    background: url(../images/sub1/dessert/dessert_01.png) no-repeat center 40px, url(../images/sub1/dessert/dessert_bg.png) no-repeat 0 0;
+}
+.dessert_inner ul:nth-child(2){
+    background: url(../images/sub1/dessert/dessert_02.png) no-repeat center 40px, url(../images/sub1/dessert/dessert_bg.png) no-repeat 0 0;
+}
+.dessert_inner ul:nth-child(3){
+    background: url(../images/sub1/dessert/dessert_03.png) no-repeat center 40px, url(../images/sub1/dessert/dessert_bg.png) no-repeat 0 0;
+}
+.dessert_inner ul:nth-child(4){
+    background: url(../images/sub1/dessert/dessert_04.png) no-repeat center 40px, url(../images/sub1/dessert/dessert_bg.png) no-repeat 0 0;
+}
+.dessert_inner ul:nth-child(5){
+    background: url(../images/sub1/dessert/dessert_05.png) no-repeat center 40px, url(../images/sub1/dessert/dessert_bg.png) no-repeat 0 0;
+}
+
+/*베스트 스티커*/
+.best_icon{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 23px;
+}
+
+/*마시는 메뉴판*/
+
+#beverage_proj{
+    width: 100%;
+    overflow: hidden;
+}
+#beverage_proj h2{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 500;
+}
+.beverage_01{
+    margin: 0 auto;
+    width: 1100px;
+    height: 371px;
+    background: url(../images/sub1/beverage/yogurt_bg.png) no-repeat 554px 0;
+}
+
+.beverage_01 img{
+    display: inline-block;
+    float: right;
+    margin-top: 60px;
+    margin-right: 75px;
+}
+.beverage_01 ul{
+    float: left;
+    width: 247px;
+    height: 330px;
+    margin-right: 39px;
+    margin-bottom: 50px;
+    text-align: center; 
+    position: relative;
+}
+.beverage_01 ul li{
+    margin-top: 176px;
+    margin-bottom: -176px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+.beverage_btn {
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    padding: 10px 20px; 
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    cursor: pointer;
+    cursor: url(../images/mouse_hover.png), auto;
+}
+.beverage_btn:hover{
+    background-color: #7fbaa4;
+    border: 1px solid #7fbaa4;
+    box-shadow: rgba(0, 0, 0, 0.2) -3px 3px 2px inset;
+    color: #fff;
+}
+.beverage_01 ul:nth-child(2){
+    background: url(../images/sub1/beverage/yogurt_01.png) no-repeat center 40px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+.beverage_01 ul:nth-child(3){
+    background: url(../images/sub1/beverage/yogurt_02.png) no-repeat center 40px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+
+.beverage_02{
+    margin: 0 auto;
+    width: 1320px;
+    height: 329px;
+    background: url(../images/sub1/beverage/shake_bg.png) no-repeat 270px 0;
+}
+.beverage_02 ul{
+    float: left;
+    width: 247px;
+    height: 330px;
+    margin-right: 39px;
+    margin-bottom: 50px;
+    text-align: center; 
+    position: relative;
+}
+.beverage_02 ul:nth-child(1){
+    margin-left: 444px;
+}
+.beverage_02 ul li{
+    margin-top: 176px;
+    margin-bottom: -176px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+}
+.beverage_02 ul p{
+
+    margin-bottom: 10px;
+}
+.beverage_btn {
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    padding: 10px 20px; 
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+.beverage_btn:hover{
+    background-color: #7fbaa4;
+    border: 1px solid #7fbaa4;
+    box-shadow: rgba(0, 0, 0, 0.2) -3px 3px 2px inset;
+    color: #fff;
+    cursor: url(../images/mouse_hover.png), auto;
+}
+.beverage_02 ul:nth-child(1){
+    background: url(../images/sub1/beverage/shake_01.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+.beverage_02 ul:nth-child(2){
+    background: url(../images/sub1/beverage/shake_02.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+.beverage_02 ul:nth-child(3){
+    background: url(../images/sub1/beverage/shake_03.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+
+
+/*팝업 꾸미기*/
+.popup{/*화면전체 배경*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;/*팝업 안보이게*/
+    z-index: 100;
+}
+.popup div{/*가운데 창*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 679px;
+    height: 685px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #222;
+}
+.popup1 div{
+    background: url(../images/sub1/popup/popup_01.png) no-repeat 50% 0;
+}
+.popup2 div{
+    background: url(../images/sub1/popup/popup_02.png) no-repeat 50% 0;
+}
+.popup3 div{
+    background: url(../images/sub1/popup/dessert_popup1.png) no-repeat 50% 0;
+}
+.popup4 div{
+    background: url(../images/sub1/popup/dessert_popup2.png) no-repeat 50% 0;
+}
+.popup5 div{
+    background: url(../images/sub1/popup/drink_popup1.png) no-repeat 50% 0;
+}
+.popup6 div{
+    background: url(../images/sub1/popup/drink_popup2.png) no-repeat 50% 0;
+}
+
+.popup h3{
+    margin-top: 430px;
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
+}
+.popup h4{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
+
+.popup p{
+    margin-top: 43px;
+}
+.popup p span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.kcal{
+    font-size: 15px;
+}
+.x_btn{
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    display: inline-block;
+}
+.popup img{
+    display: block;
+}
+
+.popup2 h4{
+    margin-top: 30px;
+}
+.popup2 p{
+    margin-top: 36px;
+}
+.popup3 p{
+    margin-top: 35px;
+}
+.popup3 h4{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
+.popup4 h4{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
+.popup4 p{
+    margin-top: 35px;
+}
+.popup5 h4{
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
+.popup5 p{
+    margin-top: 37px;
+}
+.popup6 h4{
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
+.popup6 p{
+    margin-top: 37px;
+}
+
+/* 커피 & 티 */
+
+.beverage_03{
+    margin: 0 auto;
+    width: 1320px;
+    height: 500px;
+    background: url(../images/sub1/beverage/tea_bg.png)no-repeat 550px 9em;
+}
+.beverage_03 ul{
+    float: left;
+    width: 247px;
+    height: 330px;
+    margin-right: 42px;
+    margin-bottom: 50px;
+    text-align: center; 
+    position: relative;
+}
+.beverage_03 ul li{
+    margin-top: 176px;
+    margin-bottom: -176px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+}
+.beverage_03 ul p{
+
+    margin-bottom: 10px;
+}
+.beverage_btn {
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    padding: 10px 20px; 
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    cursor: pointer;
+}
+.beverage_btn:hover{
+    background-color: #7fbaa4;
+    border: 1px solid #7fbaa4;
+    box-shadow: rgba(0, 0, 0, 0.2) -3px 3px 2px inset;
+    color: #fff;
+}
+.beverage_03 ul:nth-child(1){
+    background: url(../images/sub1/beverage/coffee_01.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+.beverage_03 ul:nth-child(2){
+    background: url(../images/sub1/beverage/coffee_02.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+.beverage_03 ul:nth-child(3){
+    margin-left: 152px;
+    background: url(../images/sub1/beverage/tea_01.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+.beverage_03 ul:nth-child(4){
+    background: url(../images/sub1/beverage/tea_02.png) no-repeat center 18px, url(../images/sub1/beverage/beverage_bg.png) no-repeat 0 0;
+}
+
+#asac_life_proj{
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../images/sub1/asac_life/bg.png)no-repeat 5px 208px;
+    position: relative;
+}
+/*아삭라이프 배경소스 애니메이션*/
+.source1{
+    position: absolute;
+    top: 333px;
+    left: 215px;
+    animation: ani5 1s linear infinite alternate;
+}
+@keyframes ani5{
+    0%{top: 333px;}
+    100%{top: 340px;}
+}
+.source2{
+    position: absolute;
+    top: 416px;
+    left: 139px;
+    animation: ani6 1s linear infinite alternate;
+}
+@keyframes ani6{
+    0%{top: 416px;}
+    100%{top: 425px;}
+}
+.source3{
+    position: absolute;
+    top: 340px;
+    right: 170px;
+    animation: ani7 1s linear infinite alternate;
+}
+@keyframes ani7{
+    0%{top: 340px;}
+    100%{top: 350px;}
+}
+#asac_life_proj h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 30px 0px;
+    background: url(../images/sub1/asac_life/h1_bg.png) no-repeat 48% 0;
+    margin-bottom: 50px;
+    margin-top: 260px;
+}
+#asac_life_proj p{
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    text-align: center;
+    color: #455c4f;
+    font-family: 'Pretendard-Regular';
+    margin-bottom: 80px;
+}
+
+/*마크 태그*/
+p span{
+    font-weight: bold;
+}
+.blue {
+    background: linear-gradient(to top, #d5f1fd 50%, transparent 50%);
+    }
+
+.pink {
+    background: linear-gradient(to top, #f3d1c9 50%, transparent 50%);
+    } 
+.green{
+    background: linear-gradient(to top, #dfedd3 50%, transparent 50%);
+    } 
+
+
+#asac_life_proj article{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+    justify-content: space-between;
+    width: 315px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#asac_life_proj dl{
+width: 140px;
+height: 140px;
+padding: 20px;
+border: 2px solid #455c4f;
+border-radius: 20px;
+box-sizing: border-box;
+}
+#asac_life_proj dl dt{
+text-align: center;
+padding-top: 85px;
+font-size: 16px;
+font-family:'Pretendard-Regular';
+font-weight: 600;
+}
+dt a{
+color: #455c4f;
+}
+dt a:hover{
+color: #fff;
+}
+#asac_life_proj dl:nth-child(1){
+background: url(../images/sub1/asac_life/goods_icon.png)no-repeat 50% 0;  
+}
+#asac_life_proj dl:nth-child(1):hover{
+background: url(../images/sub1/asac_life/goods_icon_hover.png)no-repeat 50% 0;
+border: 2px solid #7ea4cf;
+background-color: #7ea4cf;
+}
+
+#asac_life_proj dl:nth-child(2){
+    background: url(../images/sub1/asac_life/grocery_icon.png)no-repeat 50% 0;  
+    }
+    #asac_life_proj dl:nth-child(2):hover{
+    background: url(../images/sub1/asac_life/grocery_icon_hover.png)no-repeat 50% 0;
+    border: 2px solid #ac9acb;
+    background-color: #ac9acb;
+    }
+
+/*맴버십 박스*/
+
+
+#goods_proj{
+    width: 100%;
+    overflow: hidden;
+}
+
+#help_box{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fafafa;
+    margin-bottom: 100px;
+}
+.help_inner{
+    margin: 0 auto;
+    width: 1320px;
+    height: 350px;
+    position: relative;
+}
+.help_inner ul{
+    float: left;
+    width: 182px;
+    height: 180px;
+    box-sizing: border-box;
+} 
+.help_inner ul li{
+    margin-top: 150px;
+} 
+.help_inner ul li a{
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+    color: #8faca4;
+}
+.help_inner ul li a:hover{
+    color: #7aa785;
+}
+.help_inner ul li{
+    text-align: center;
+}
+.help_inner ul:nth-child(1){
+    background: url(../images/sub1/help/membership.png) no-repeat 32px 0;
+    position: absolute;
+    top: 100px;
+    left: 270px;
+}
+.help_inner ul:nth-child(1):hover{
+    background: url(../images/sub1/help/membership_hover.png) no-repeat 32px 0;
+    text-decoration: underline;
+}
+
+.help_inner ul:nth-child(2){
+    background: url(../images/sub1/help/parcel.png)no-repeat 32px 0;
+    position: absolute;
+    top: 100px;
+    left: 580px;
+}
+.help_inner ul:nth-child(2):hover{
+    background: url(../images/sub1/help/parcel_hover.png) no-repeat 32px 0;
+    text-decoration: underline;
+}
+.help_inner ul:nth-child(3){
+    margin-left: 83px;
+    background: url(../images/sub1/help/css.png)no-repeat 32px 0;    
+    position: absolute;
+    top: 100px;
+    left: 799px;
+}
+.help_inner ul:nth-child(3):hover{
+    background: url(../images/sub1/help/css_hover.png) no-repeat 32px 0;
+    text-decoration: underline;
+}
+
+
+
+/*푸터*/
+
+#footer{
+    width: 100%;
+    background: url(../images/footer/footer_bg.png)no-repeat 50% 0;
+    overflow: hidden;
+}
+
+.footer_inner{
+    width: 1320px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 300px;
+
+}
+
+.f_logo{
+    display: block;
+    float: left;
+}
+.footer_text{
+    float: left;
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    padding-left: 70px;
+    letter-spacing: 2px;
+}
+.footer_text span{
+    font-weight: 700;
+    
+}
+
+.right_footer{
+    padding: 10px;
+    float: right;
+    letter-spacing: 1px;
+    background: url(../images/footer/footer_mail.png) no-repeat 0px 135px;
+}
+.right_footer h4{
+    font-family: 'Pretendard-Regular';
+    padding-right: 5px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+.right_footer p{
+    text-align: right;
+}
+.right_footer p a:hover{
+    opacity: 0.5;
+}
+
+.right_footer p{
+    font-size: 13px;
+    font-family: 'Pretendard-Regular';
+    padding: 10px;
+    text-align: right;
+}
+
+
+.footer2{
+    width: 100%;
+    border-top: #222 solid 2px;
+    padding: 50px;
+    background-color: #e0f1f8;
+}
+.footer2 p{
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Pretendard-Regular';
+}
+
+/*탑버튼*/
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+  }
+
+
+
+
+
+
